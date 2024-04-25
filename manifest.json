@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Adds a standardized shortcut for selecting the search bar on every website.",
   "permissions": [
-    "activeTab"
+    "<all_urls>"
   ],
   "action": {
     "default_popup": "popout.html",
