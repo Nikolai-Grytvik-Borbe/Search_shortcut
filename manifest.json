@@ -3,9 +3,6 @@
   "name": "Search shortcut",
   "version": "1.0",
   "description": "Adds a standardized shortcut for selecting the search bar on every website.",
-  "permissions": [
-    "<all_urls>"
-  ],
   "action": {
     "default_popup": "popout.html",
     "default_icon": "icon.png"
