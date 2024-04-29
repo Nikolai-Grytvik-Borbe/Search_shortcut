@@ -8,14 +8,11 @@ The Universal Search Bar Shortcut Chrome extension allows users to activate the 
 ## Features
 - **Universal Shortcut**: Use a single, customizable keyboard shortcut to focus on the search bar across different websites.
 
-## Installation (Add this when the extension has been accepted)
-1. Download the extension file from the [Releases page](#).
-2. Open Chrome and navigate to `chrome://extensions/`.
-3. Enable "Developer mode" at the top right.
-4. Click "Load unpacked" and select the downloaded extension directory.
-
+## Installation (The extension is not yet on the chrome webstore)
+1. Download the extension from the [chrome webstore](url)
+   
 ## Usage
-After installation, simply press the configured keyboard shortcut (default is `Shift`) to focus on the search bar on any supported website.
+After installation, simply press the configured keyboard shortcut (default is `alt + S`) to focus on the search bar on any supported website.
 
 ## [Supported Websites](./manifest.json)
 The extension works automatically with most popular websites. If a site is not supported, please [file an issue](https://github.com/Nikolai-Grytvik-Borbe/Search_shortcut/issues).
