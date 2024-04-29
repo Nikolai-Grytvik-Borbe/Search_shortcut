@@ -1,12 +1,19 @@
 // For website that has a input search bar
 
+
 document.addEventListener('keydown', function (event) {
-    if (event.shiftKey) {
+    if (event.altKey && event.key == "s") {
         
-        // These should catch the search bar for most websites
+        // Add if statement here if a website doesn't work
         var searchBar = document.querySelector('input#search');
         if (!searchBar) {
-           searchBar = document.querySelector('input[type="search"]');
+            searchBar = document.querySelector('input#ikea-search-input');
+        }
+        if (!searchBar) {
+            searchBar = document.querySelector('input#search-index');
+        }
+        if (!searchBar) {
+            searchBar = document.querySelector('input[type="search"]');
         }
         if (!searchBar) {
             searchBar = document.querySelector('input[placeholder="Search"]');
@@ -17,6 +24,35 @@ document.addEventListener('keydown', function (event) {
         if (!searchBar) {
             searchBar = document.querySelector('input.search-input');
         }
+        if (!searchBar) {
+            searchBar = document.getElementById("search_form_input");
+        }
+        if (!searchBar) {
+            searchBar = document.querySelector('input#twotabsearchtextbox');
+        }
+        if (!searchBar) {
+            searchBar = document.querySelector('input[placeholder = "search"]');
+        }
+        if (!searchBar) {
+            searchBar = document.querySelector('input[placeholder = "SEARCH"]');
+        }
+        if (!searchBar) {
+            searchBar = document.querySelector('input[placeholder = "Search"]');
+        }
+        if (!searchBar) {
+            searchBar = document.querySelector('input[placeholder = "Search..."]');
+        }
+        if (!searchBar) {
+            searchBar = document.querySelector('input[placeholder = "Søk i Store medisinske leksikon"]');
+        }
+        if (!searchBar) {
+            searchBar = document.querySelector('input[placeholder = "Search movies...');
+        }
+
+
+        // ==========================
+
+
         if (searchBar) {
             console.log("Search bar found:", searchBar);
             searchBar.focus();

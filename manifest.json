@@ -3,6 +3,9 @@
   "name": "Search shortcut",
   "version": "1.0",
   "description": "Adds a standardized shortcut for selecting the search bar on every website.",
+  "permissions": [
+    "storage"
+  ],
   "action": {
     "default_popup": "popout.html",
     "default_icon": "icon.png"
@@ -10,15 +13,8 @@
   "content_scripts": [
     {
       "run_at": "document_start",
-      "js": ["scripts/script.js"],
+      "js": ["scripts/script.js", "scripts/script2.js"],
       "matches": [
-        "*://*.youtube.com/*",
-        "*://*.twitch.tv/*",
-        "*://*.wikipedia.org/*",
-        "*://*.twitter.com/*",
-        "*://*.xvideos.com/*",
-        "*://*.pornhub.com/*",
-        "*://*.elkjop.no/*",
         "*://*/*"
       ]
     },
@@ -34,19 +30,10 @@
     {
       "run_at": "document_start",
       "js": [
-        "scripts/duckduckgo.js"
+        "scripts/bbc.js"
       ],
       "matches": [
-        "*://*.duckduckgo.com/*"
-      ]
-    },
-    {
-      "run_at": "document_start",
-      "js": [
-        "scripts/amazon.js"
-      ],
-      "matches": [
-        "*://*.amazon.com/*"
+        "*://*.bbc.com/*"
       ]
     }
   ]

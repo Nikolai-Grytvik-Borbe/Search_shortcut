@@ -1,7 +1,7 @@
 // Spesific for google
 
 document.addEventListener('keydown', function (event) {
-    if (event.shiftKey) {
+    if (event.altKey && event.key == "s") {
 
         var textareas = document.getElementsByTagName('textarea'); // Returns all textarea elements
         var searchBar = textareas[0];
