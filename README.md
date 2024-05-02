@@ -14,9 +14,6 @@ The Universal Search Bar Shortcut Chrome extension allows users to activate the 
 ## Usage
 After installation, simply press the configured keyboard shortcut (default is `alt + S`) to focus on the search bar on any supported website.
 
-## [Supported Websites](./manifest.json)
-The extension works automatically with most popular websites. If a site is not supported, please [file an issue](https://github.com/Nikolai-Grytvik-Borbe/Search_shortcut/issues).
-
 ## To-Do
 - [ ] **Expand Website Compatibility**: Some websites may not yet be supported for automatic search bar selection. We are actively working to increase the number of supported websites.
 - [ ] **Improve Universal Selection**: Investigate and implement a more universal method to reliably select search bars across different website structures.
